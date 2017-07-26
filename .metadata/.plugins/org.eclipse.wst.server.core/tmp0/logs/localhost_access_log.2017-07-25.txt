@@ -1,0 +1,7 @@
+127.0.0.1 - - [25/Jul/2017:17:29:12 -0700] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [25/Jul/2017:17:29:13 -0700] "GET /JspIncludeDirectiveProgram/ HTTP/1.1" 404 1048
+0:0:0:0:0:0:0:1 - - [25/Jul/2017:17:29:38 -0700] "GET /JspIncludeDirectiveProgram/Demo1.jsp HTTP/1.1" 200 426
+0:0:0:0:0:0:0:1 - - [25/Jul/2017:17:29:46 -0700] "GET /JspIncludeDirectiveProgram/loginaction.jsp?uname=admin&pass=admin HTTP/1.1" 200 288
+0:0:0:0:0:0:0:1 - - [25/Jul/2017:17:29:53 -0700] "GET /JspIncludeDirectiveProgram/loginaction.jsp?uname=admin&pass=admin121 HTTP/1.1" 200 721
+0:0:0:0:0:0:0:1 - - [25/Jul/2017:17:31:43 -0700] "GET /JspIncludeDirectiveProgram/loginaction.jsp?uname=admin&pass=admin121 HTTP/1.1" 200 1017
+0:0:0:0:0:0:0:1 - - [25/Jul/2017:17:32:48 -0700] "GET /JspIncludeDirectiveProgram/Demo1.jsp HTTP/1.1" 200 724
