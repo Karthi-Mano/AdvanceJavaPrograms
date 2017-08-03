@@ -24,6 +24,8 @@
   -->
   <!--APR library loader. Documentation at /docs/apr.html -->
   <Listener SSLEngine="on" className="org.apache.catalina.core.AprLifecycleListener"/>
+  <!--Initialize Jasper prior to webapps are loaded. Documentation at /docs/jasper-howto.html -->
+  <Listener className="org.apache.catalina.core.JasperListener"/>
   <!-- Prevent memory leaks due to use of particular java/javax APIs-->
   <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener"/>
   <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"/>
@@ -69,12 +71,12 @@
                redirectPort="8443" />
     -->
     <!-- Define a SSL HTTP/1.1 Connector on port 8443
-         This connector uses the NIO implementation that requires the JSSE
+         This connector uses the BIO implementation that requires the JSSE
          style configuration. When using the APR/native implementation, the
          OpenSSL style configuration is required as described in the APR/native
          documentation -->
     <!--
-    <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+    <Connector port="8443" protocol="org.apache.coyote.http11.Http11Protocol"
                maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
                clientAuth="false" sslProtocol="TLS" />
     -->
@@ -122,9 +124,9 @@
         <!-- Access log processes all example.
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
-        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JspIncludeDirectiveProgram" path="/JspIncludeDirectiveProgram" reloadable="true" source="org.eclipse.jst.jee.server:JspIncludeDirectiveProgram"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JspUseBeanPrograms" path="/JspUseBeanPrograms" reloadable="true" source="org.eclipse.jst.jee.server:JspUseBeanPrograms"/></Host>
+      <Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\DemoApp" path="/DemoApp" reloadable="true" source="org.eclipse.jst.jee.server:DemoApp"/></Host>
     </Engine>
   </Service>
 </Server>
