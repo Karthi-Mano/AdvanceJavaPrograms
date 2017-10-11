@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="SampleDemo" path="/SampleDemo" reloadable="true" source="org.eclipse.jst.jee.server:SampleDemo"/><Context docBase="DemoServletExample" path="/DemoServletExample" reloadable="true" source="org.eclipse.jst.jee.server:DemoServletExample"/></Host>
+      <Context docBase="SampleDemo" path="/SampleDemo" reloadable="true" source="org.eclipse.jst.jee.server:SampleDemo"/><Context docBase="DemoServletExample" path="/DemoServletExample" reloadable="true" source="org.eclipse.jst.jee.server:DemoServletExample"/><Context docBase="ServletConfigExample" path="/ServletConfigExample" reloadable="true" source="org.eclipse.jst.jee.server:ServletConfigExample"/><Context docBase="ServleContextExample" path="/ServleContextExample" reloadable="true" source="org.eclipse.jst.jee.server:ServleContextExample"/><Context docBase="BasicHtml" path="/BasicHtml" reloadable="true" source="org.eclipse.jst.jee.server:BasicHtml"/><Context docBase="HiddenFormField" path="/HiddenFormField" reloadable="true" source="org.eclipse.jst.jee.server:HiddenFormField"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -1,0 +1,12 @@
+127.0.0.1 - - [22/Sep/2017:22:32:33 -0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:22:32:36 -0700] "GET /BasicHtml/HomePage.html HTTP/1.1" 200 154
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:22:32:37 -0700] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:22:39:10 -0700] "GET /BasicHtml/HomePage.html HTTP/1.1" 200 248
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:22:46:39 -0700] "GET /BasicHtml/RegisterPage.html HTTP/1.1" 200 454
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:22:47:16 -0700] "GET /BasicHtml/RegisterPage.html HTTP/1.1" 200 492
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:22:50:59 -0700] "GET /BasicHtml/RegisterPage.html HTTP/1.1" 200 571
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:22:56:14 -0700] "GET /BasicHtml/RegisterPage.html HTTP/1.1" 200 685
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:23:01:26 -0700] "GET /BasicHtml/RegisterPage.html HTTP/1.1" 200 606
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:23:01:26 -0700] "GET /BasicHtml/foo.css HTTP/1.1" 200 32
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:23:01:59 -0700] "GET /BasicHtml/HomePage.html HTTP/1.1" 200 325
+0:0:0:0:0:0:0:1 - - [22/Sep/2017:23:01:59 -0700] "GET /BasicHtml/foo.css HTTP/1.1" 304 -
