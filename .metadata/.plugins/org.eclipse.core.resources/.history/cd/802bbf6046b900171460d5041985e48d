@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="DTProjectsBootStrap">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <property name="context-root" value="DTProjectsBootStrap"/>
+        <property name="java-output-path" value="/DTProjectsBootStrap/build/classes"/>
+    </wb-module>
+</project-modules>
