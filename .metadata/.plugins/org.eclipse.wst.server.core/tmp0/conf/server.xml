@@ -17,7 +17,7 @@
 --><!-- Note:  A "Server" is not itself a "Container", so you may not
      define subcomponents such as "Valves" at this level.
      Documentation at /docs/config/server.html
- --><Server port="9393" shutdown="SHUTDOWN">
+ --><Server port="8005" shutdown="SHUTDOWN">
   <Listener className="org.apache.catalina.startup.VersionLoggerListener"/>
   <!-- Security listener. Documentation at /docs/config/listeners.html
   <Listener className="org.apache.catalina.security.SecurityListener" />
@@ -62,7 +62,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" port="9292" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -82,7 +82,7 @@
     -->
 
     <!-- Define an AJP 1.3 Connector on port 8009 -->
-    <Connector port="9494" protocol="AJP/1.3" redirectPort="8443"/>
+    <Connector port="8009" protocol="AJP/1.3" redirectPort="8443"/>
 
 
     <!-- An Engine represents the entry point (within Catalina) that processes
@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SampleDemo" path="/SampleDemo" reloadable="true" source="org.eclipse.jst.jee.server:SampleDemo"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\DemoServletExample" path="/DemoServletExample" reloadable="true" source="org.eclipse.jst.jee.server:DemoServletExample"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ServletConfigExample" path="/ServletConfigExample" reloadable="true" source="org.eclipse.jst.jee.server:ServletConfigExample"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ServleContextExample" path="/ServleContextExample" reloadable="true" source="org.eclipse.jst.jee.server:ServleContextExample"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BasicHtml" path="/BasicHtml" reloadable="true" source="org.eclipse.jst.jee.server:BasicHtml"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\HiddenFormField" path="/HiddenFormField" reloadable="true" source="org.eclipse.jst.jee.server:HiddenFormField"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\DTProjectsBootStrap" path="/DTProjectsBootStrap" reloadable="true" source="org.eclipse.jst.jee.server:DTProjectsBootStrap"/></Host>
+      <Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="F:\AdvanceJavaEclipse\AdvanceJavaPrograms\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JSFExample" path="/JSFExample" reloadable="true" source="org.eclipse.jst.jee.server:JSFExample"/></Host>
     </Engine>
   </Service>
 </Server>
