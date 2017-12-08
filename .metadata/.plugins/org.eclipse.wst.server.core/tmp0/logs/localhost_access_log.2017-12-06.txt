@@ -1,0 +1,10 @@
+127.0.0.1 - - [06/Dec/2017:11:45:30 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [06/Dec/2017:11:45:30 +0530] "GET /DemoApp1/index.html HTTP/1.1" 200 2703
+0:0:0:0:0:0:0:1 - - [06/Dec/2017:11:45:30 +0530] "GET /DemoApp1/images/img1.jpg HTTP/1.1" 200 9184
+0:0:0:0:0:0:0:1 - - [06/Dec/2017:11:45:31 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [06/Dec/2017:11:45:40 +0530] "GET /DemoApp1/ViewProductsTv.html HTTP/1.1" 200 2691
+0:0:0:0:0:0:0:1 - - [06/Dec/2017:11:45:40 +0530] "GET /DemoApp1/images/tv1.jpg HTTP/1.1" 200 4384
+0:0:0:0:0:0:0:1 - - [06/Dec/2017:11:45:40 +0530] "GET /DemoApp1/images/tv2.jpg HTTP/1.1" 200 6164
+0:0:0:0:0:0:0:1 - - [06/Dec/2017:11:45:40 +0530] "GET /DemoApp1/images/tv3.jpg HTTP/1.1" 200 3702
+0:0:0:0:0:0:0:1 - - [06/Dec/2017:11:45:42 +0530] "GET /DemoApp1/ProductDes.html HTTP/1.1" 200 1971
+0:0:0:0:0:0:0:1 - - [06/Dec/2017:11:45:44 +0530] "GET /DemoApp1/PaymentPage.html HTTP/1.1" 200 3204
