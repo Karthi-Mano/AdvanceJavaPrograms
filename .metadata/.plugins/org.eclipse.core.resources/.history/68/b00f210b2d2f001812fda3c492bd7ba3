@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2 style="background-color: aqua;font-style: italic;">loginform</h2>
+
+<h2>welcome</h2>
+<form>
+UserName:<input type="text">
+Email:<input type="text">
+<input type="submit" value="Login">
+</form>
+</body>
+</html>

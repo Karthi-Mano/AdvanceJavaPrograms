@@ -37,7 +37,8 @@
           //  out.println("Your Email Id is:\n"+rs.getString(1));
             out.println("</table>");
             
-           
+             out.println("<h1>Click Here to Update</h1>");
+             out.println("<a href='updatepage.jsp'>Update</a>");
             %>
     </body>
 </html>
