@@ -1,0 +1,39 @@
+<%-- 
+    Document   : javavideos
+    Created on : Jan 31, 2018, 11:53:05 AM
+    Author     : Asar
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        
+       <jsp:include page="header.jsp"></jsp:include>
+       
+       
+    <!-- Card -->
+
+            <iframe class="embed-responsive-item" width="300px" height="300px" src="https://www.youtube.com/embed/EfJlCPIrx2s"></iframe>
+
+    <!-- Content -->
+    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+        <div>
+            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                Odit sed qui, dolorum!.</p>
+            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+        </div>
+    </div>
+    <!-- Content -->
+</div>
+<!-- Card -->
+        <jsp:include page="footer.jsp"/>
+    </body>
+</html>
