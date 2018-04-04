@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="DemoApp1" path="/DemoApp1" reloadable="true" source="org.eclipse.jst.jee.server:DemoApp1"/><Context docBase="SampleWebSite" path="/SampleWebSite" reloadable="true" source="org.eclipse.jst.jee.server:SampleWebSite"/><Context docBase="BootStrapApp" path="/BootStrapApp" reloadable="true" source="org.eclipse.jst.jee.server:BootStrapApp"/><Context docBase="JHCProgramming" path="/JHCProgramming" reloadable="true" source="org.eclipse.jst.jee.server:JHCProgramming"/><Context docBase="ForloopJavaScript" path="/ForloopJavaScript" reloadable="true" source="org.eclipse.jst.jee.server:ForloopJavaScript"/></Host>
+      <Context docBase="DemoApp1" path="/DemoApp1" reloadable="true" source="org.eclipse.jst.jee.server:DemoApp1"/><Context docBase="SampleWebSite" path="/SampleWebSite" reloadable="true" source="org.eclipse.jst.jee.server:SampleWebSite"/><Context docBase="BootStrapApp" path="/BootStrapApp" reloadable="true" source="org.eclipse.jst.jee.server:BootStrapApp"/><Context docBase="JHCProgramming" path="/JHCProgramming" reloadable="true" source="org.eclipse.jst.jee.server:JHCProgramming"/><Context docBase="ForloopJavaScript" path="/ForloopJavaScript" reloadable="true" source="org.eclipse.jst.jee.server:ForloopJavaScript"/><Context docBase="JavaScriptFunction" path="/JavaScriptFunction" reloadable="true" source="org.eclipse.jst.jee.server:JavaScriptFunction"/></Host>
     </Engine>
   </Service>
 </Server>
