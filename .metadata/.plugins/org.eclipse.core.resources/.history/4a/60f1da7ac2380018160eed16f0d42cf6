@@ -1,16 +1,12 @@
+<!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1" -->
+<!--     pageEncoding="ISO-8859-1"%> -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-
-<title>Tutorials-Java</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Tutorials-JHCPROGRAMMING</title>
  
-      <style type="text/css">
-  a
-  {
-    font-family:Times New Roman;
-  }
-  </style>
+   
        <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -19,14 +15,14 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
-
-
-
+    
 </head>
 <body>
-<!--   <jsp:include page="header.jsp"></jsp:include> -->
 
-<!-- header start point -->
+<!-- <%-- <jsp:include page="header.jsp"></jsp:include> --%> -->
+
+
+<!-- headerfile -->
  <img src="images/logo1.jpg" width="300px" height="100px"/>
 
 <!--Navbar-->
@@ -64,9 +60,9 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Programming Videos</a>
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="cvideospage1.html">C-Videos</a>
-                    <a class="dropdown-item" href="oopsvideospage1.html">OOPS-Videos</a>
-                    <a class="dropdown-item" href="javavideos.html">Java-Videos</a>
+                    <a class="dropdown-item" href="cvideospage1.jsp">C-Videos</a>
+                    <a class="dropdown-item" href="oopsvideospage1.jsp">OOPS-Videos</a>
+                    <a class="dropdown-item" href="javavideos.jsp">Java-Videos</a>
                 </div>
             </li>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -79,18 +75,42 @@
 
 </nav>
 <!--/.Navbar-->
-<!-- header end point -->
+<!-- headerend -->
 
 
 
+<!-- Grid row -->
+<div class="row">
 
+   
 
-       
-     <center><img src="images/coming-soon.jpg" width="50%" height="50%"/></center>
-     
-     
-     
-     <!--Footer end point-->
+    <!-- Grid column -->
+    <div class="col-md-12">
+
+        <!--Panel-->
+        <div class="card mb-3">
+            <h3 class="card-header indigo white-text text-uppercase text-center">Author</h3>
+            <div class="card-body">
+                <div class="media d-block d-md-flex mt-md-0 mt-4 mb-4">
+                    <img class="d-flex mb-md-0 mb-3 avatar-2 rounded-circle z-depth-1 mx-auto" src="images/authorimg.jpg" alt="An image" width="10%" height="10%"> 
+                    <div class="media-body ml-md-3 ml-0">
+                        <p align="justify">"My Self Mohamed  working in an private sector for 5yrs Teaching Experiences I have written  this site so that students may learn graduate's related technologies very easily known they Programming Language.
+                        I have only focusing on Java , Advance Java and Webdesign Programs"</p>
+                        <div class="text-center text-md-left">
+                            <button type="button" class="btn btn-indigo btn-rounded btn-md">Read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                          </div>
+        </div>
+        <!--/.Panel-->
+
+    </div>
+    <!-- Grid column -->
+
+</div>
+<!--Footer-->
       <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
       
           <!--Footer Links-->
@@ -181,18 +201,9 @@
           </div>
       
       </footer>
-      <!--/.Footer end point-->
+      <!--/.Footer-->
                       
-       <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-                
-<!--   <jsp:include page="footer.jsp"/> -->
+<!-- <jsp:include page="footer.jsp"></jsp:include> -->
+
 </body>
 </html>
