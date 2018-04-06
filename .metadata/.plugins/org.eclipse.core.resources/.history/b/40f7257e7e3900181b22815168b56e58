@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+ 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans">
+    
+ <style type="text/css">
+  a
+  {
+    font-family:Times New Roman;
+  }
+  </style>
+       <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    
+    <!-- quiz start point -->
+<style>
+div#test{ border:#5AB029 3px solid; padding:10px 40px 40px 40px; background-color:#E5FCE3; width:50%;}
+</style>
+
+<script type="text/javascript">
+// pos is position of where the user in the test or which question they're up to
+var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
+// this is a multidimensional array with 4 inner array elements with 5 elements inside them
+// if you don't want answers viewable in the code, then you should use PHP and mySQL database
+var questions = [
+  ["Which of the following type of class allows only one object of it to be created?",
+		  
+		  "Virtual class", "Abstract class", "Singleton class", "C"],
+  ["What is 7 x 4?", "21", "27", "28", "C"],
+  ["What is 16 / 4?", "4", "6", "3", "A"],
+  ["What is 8 x 12?", "88", "112", "96", "C"]
+  ];
+// this get function is short for the getElementById function	
+function get(x){
+  return document.getElementById(x);
+}
+function renderQuestion(){
+  test = get("test");
+  if(pos >= questions.length){
+    test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
+    get("test_status").innerHTML = "Test completed";
+    // resets the variable to allow users to restart the test
+    pos = 0;
+    correct = 0;
+    // stops rest of renderQuestion function running when test is completed
+    return false;
+  }
+  get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+  question = questions[pos][0];
+  chA = questions[pos][1];
+  chB = questions[pos][2];
+  chC = questions[pos][3];
+  test.innerHTML = "<h3>"+question+"</h3>";
+  // the += appends to the data we started on the line above
+  test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br><br>";
+  test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+}
+function checkAnswer(){
+  // use getElementsByName because we have an array which it will loop through
+  choices = document.getElementsByName("choices");
+  for(var i=0; i<choices.length; i++){
+    if(choices[i].checked){
+      choice = choices[i].value;
+    }
+  }
+  // checks if answer matches the correct choice
+  if(choice == questions[pos][4]){
+    //each time there is a correct answer this value increases
+    correct++;
+  }
+  // changes position of which character user is on
+  pos++;
+  // then the renderQuestion function runs again to go to next question
+  renderQuestion();
+}
+window.addEventListener("load", renderQuestion, false);
+</script>
+</head>
+<body>
+<!-- header start point -->
+ <img src="images/logo1.jpg" width="300px" height="100px"/>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+      <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home
+                  
+                </a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <li class="nav-item">
+                <a class="nav-link" href="homepage.html">Author
+                  
+                </a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link" href="logicprograms.html">LogicPrograms</a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link" href="javadocumentpage1.html">Java</a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <li class="nav-item">
+                <a class="nav-link" href="onlinequizpage1.html">OnlineQuiz</a>
+            </li>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Programming Videos</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="cvideospage1.html">C-Videos</a>
+                    <a class="dropdown-item" href="oopsvideospage1.html">OOPS-Videos</a>
+                    <a class="dropdown-item" href="javavideos.html">Java-Videos</a>
+                </div>
+            </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </ul>
+        <!-- Links -->
+
+       <h6 style=font-family:Forte>(JavaHardCode)</h6>
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+
+<!--/.Navbar-->
+
+<!-- header end point -->
+
+
+</head>
+<body>
+<h2 id="test_status"></h2>
+<div id="test">dd</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+<!-- footer start point -->
+  <!--Footer-->
+      <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+      
+          <!--Footer Links-->
+          <div class="container text-center text-md-left">
+      
+              <!-- Footer links -->
+              <div class="row text-center text-md-left mt-3 pb-3">
+      
+                  <!--First column-->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">JHCPROGRAMMING</h6>
+                      <p>Easy to learn Programs@Anytime@Anywhere</p>
+                  </div>
+                  <!--/.First column-->
+      
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  <!--Second column-->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Objective</h6>
+                      <p><a href="#!">Java</a></p>
+                      <p><a href="#!">C-Programming</a></p>
+                      <p><a href="#!">OOPS-Programming</a></p>
+                      <p><a href="#!">Bootstrap</a></p>
+                  </div>
+                  <!--/.Second column-->
+      
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  <!--Third column-->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                      <p><a href="https://www.youtube.com/channel/UCARc3v6818KY-BfmOc2efUQ?view_as=subscriber">@SubscribeYoutube</a></p>
+                      <p><a href="https://www.youtube.com/playlist?list=PLExUa3EURkZVniQIyUuok-svoBpRFquAo">CProgramming</a></p>
+                      <p><a href="https://www.youtube.com/playlist?list=PLExUa3EURkZU9xGKbGSrJQSAZ8XE0V1cZ">C++Programming</a></p>
+                      <p><a href="https://www.youtube.com/playlist?list=PLExUa3EURkZU9xGKbGSrJQSAZ8XE0V1cZ">JavaProgramming</a></p>
+                  </div>
+                  <!--/.Third column-->
+      
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  <!--Fourth column-->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                      <p><i class="fa fa-home mr-3"></i> Karur</p>
+                      <p><i class="fa fa-envelope mr-3"></i>jhcprogramming@gmail.com</p>
+                      <p><i class="fa fa-phone mr-3"></i>+919843095933</p>
+<!--                       <p><i class="fa fa-print mr-3"></i></p> -->
+                  </div>
+                  <!--/.Fourth column-->
+      
+              </div>
+              <!-- Footer links -->
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center">
+      
+                  <!--Grid column-->
+                  <div class="col-md-8 col-lg-8">
+      
+                      <!--Copyright-->
+                      <p class="text-center text-md-left grey-text">© 2018 Copyright: <a href="#!"><strong> JHCPROGRAMMING</strong></a></p>
+                      <!--/.Copyright-->
+      
+                  </div>
+                  <!--Grid column-->
+      
+                  <!--Grid column-->
+                  <div class="col-md-4 col-lg-4 ml-lg-0">
+      
+                      <!--Social buttons-->
+                      <div class="text-center text-md-right">
+                          <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+                              <li class="list-inline-item"><a  href=""><i class="fa fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a  href=""><i class="fa fa-google-plus"></i></a></li>
+                              <li class="list-inline-item"><a  href=""><i class="fa fa-linkedin"></i></a></li>
+                          </ul>
+                      </div>
+                      <!--/.Social buttons-->
+      
+                  </div>
+                  <!--Grid column-->
+      
+              </div>
+      
+          </div>
+      
+      </footer>
+      <!--/.Footer-->
+
+<!-- footer end point -->
+  <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
