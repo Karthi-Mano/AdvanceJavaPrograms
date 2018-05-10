@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="D:\Jars\j2ee.jar" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="D:" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="D:\Jars\jsf-impl-2.1.11.jar\jsf-impl-2.1.11.jar" key="org.eclipse.jdt.ui.lastuserlibrary"/>
 	<item value="480,510" key="UserLibraryLoadSaveDialog.size"/>
 	<section name="SourceActionDialog.methods">
@@ -25,7 +25,7 @@
 		<item value="false" key="create_package_info_java"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="2" key="pageIndex"/>
+		<item value="3" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

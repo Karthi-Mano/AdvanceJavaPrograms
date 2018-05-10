@@ -1,0 +1,44 @@
+package com.niit;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class registerformaction
+ */
+@WebServlet("/registerformaction")
+public class registerformaction extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+   
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		
+		
+		try
+		{
+			int regid=Integer.parseInt(request.getParameter("regid"));
+			String regname=request.getParameter("regname");
+			String email=request.getParameter("email");
+			String pass=request.getParameter("pass");
+			int age=Integer.parseInt(request.getParameter("age"));
+			Date date=request.getParameter("date");
+			
+			
+			
+		}
+		catch(IOException t)
+		{
+			System.out.println(t);
+		}
+	}
+
+}
