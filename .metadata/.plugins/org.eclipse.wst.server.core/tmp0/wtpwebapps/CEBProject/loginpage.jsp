@@ -10,10 +10,12 @@
 <center>
 <h4>EmployeeLogin</h4>
 <hr>
-<form action="loginaction" method="get">
+<form action="loginaction" method="get"><!-- form action -->
+<!-- Form code start -->
 EmployeeId:<input type="text" name="empid"/><br><br>
 EmployeePass:<input type="password" name="pass"/><br><br>
 <input type="submit" value="Login">
+<!-- Form Code End -->
 </center>
 </form>
 </body>

@@ -44,15 +44,18 @@ public class registerformaction extends HttpServlet {
 	         String quali=request.getParameter("quali");
 	        
 	         
-	         
+	         //query to insert the data
 	         String str="insert into register(empname,email,pass,age,dob,mobile,gender,qualification)values('"+empname+"','"+email+"','"+pass+"','"+age+"','"+date+"','"+mobile+"','"+gender+"','"+quali+"')";
 	         
 	         
-	         
+	         //register driverclass
 	         Class.forName("org.h2.Driver");
-	         Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/CEBProject","sa","");
-	         Statement stm=conn.createStatement();
-	         stm.executeUpdate(str);
+	         //create a connection
+	         Connection connection=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/CEBProject","sa","");
+	         //create a statement
+	         Statement statement=connection.createStatement();
+	         //execute a query
+	         statement.executeUpdate(str);
 	         out.println("Inserted");
 			
 			

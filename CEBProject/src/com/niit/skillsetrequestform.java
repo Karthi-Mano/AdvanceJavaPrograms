@@ -32,10 +32,12 @@ public class skillsetrequestform extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
+		
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		try
 		{
+			String skills=" ";
 		String empid=request.getParameter("empid");
 		String empname=request.getParameter("empname");
 		String email=request.getParameter("email");
@@ -46,17 +48,23 @@ public class skillsetrequestform extends HttpServlet {
 		String role=request.getParameter("role");
 		int stup=Integer.parseInt(request.getParameter("stup")); 
 		String status=request.getParameter("stus");
-		String skillset=(String) request.getParameter("select2");
-		
-		
-String str="insert into skillsetapply(empname,email,qualification,noofbatch,studentshandle,currentrole,rolerequest,skillsetadd,studentsplaced,status,empid)values('"+empname+"','"+email+"','"+quali+"','"+nobatch+"','"+stuh+"','"+crole+"','"+role+"','"+skillset+"','"+stup+"','"+status+"','"+empid+"')";
+		//String skillset=(String) request.getParameter("select2");
+		 String[] skillset = request.getParameterValues("select2");
+		  for(int i=0; i<skillset.length; i++){
+			  skills+=skillset[i]+" ";
+		  }
+		//query to insert the data
+String str="insert into skillsetapply(empname,email,qualification,noofbatch,studentshandle,currentrole,rolerequest,skillsetadd,studentsplaced,status,empid)values('"+empname+"','"+email+"','"+quali+"','"+nobatch+"','"+stuh+"','"+crole+"','"+role+"','"+skills+"','"+stup+"','"+status+"','"+empid+"')";
          
          
-         
+         //register driverclass
          Class.forName("org.h2.Driver");
-         Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/CEBProject","sa","");
-         Statement stm=conn.createStatement();
-         stm.executeUpdate(str);
+         //create a connection
+         Connection connection=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/CEBProject","sa","");
+         //create a statement
+         Statement statement=connection.createStatement();
+          //execute a query
+         statement.executeUpdate(str);
          out.println("Inserted");
 		}
 		catch(Exception t)

@@ -6,24 +6,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>RegisterForm</title>
 <script type="text/javascript">
-function validate()
+//JavaScript Start code
+function validate()//function
 {
     //var empid = document.getElementById("empid").value;
     var empname = document.getElementById("empname").value;
     var email = document.getElementById("email").value;
     var pass = document.getElementById("pass").value;
     var age = document.getElementById("age").value;
-    /* if(empid==="")
-    {
-        document.getElementById("div1").innerHTML="Enter a employee id";
-        document.getElementById("div1").style.color="Red";
-        
-    }
-    else
-    {
-        document.getElementById("div1").innerHTML="";
-    } */
-    if(empname==="")
+   
+    if(empname==="")//condition -1
     {
         document.getElementById("div2").innerHTML="Enter a employee name";
         document.getElementById("div2").style.color="Red";
@@ -33,7 +25,7 @@ function validate()
     {
         document.getElementById("div2").innerHTML="";
     }
-    if(email.indexOf("@")> -1)
+    if(email.indexOf("@")> -1)//condition -2
     {
         document.getElementById("div4").innerHTML="";
     }
@@ -43,7 +35,7 @@ function validate()
         document.getElementById("div4").style.color="Red";
         
     }
-    if(pass.length<=6)
+    if(pass.length<=6)//condition -3
     {
         document.getElementById("div3").innerHTML="Password is weak";
         document.getElementById("div3").style.color="Red";
@@ -52,7 +44,7 @@ function validate()
     {
         document.getElementById("div3").innerHTML="";
     }
-    if(age==="")
+    if(age==="")//condition -4
     {
         document.getElementById("div5").innerHTML="Enter a age";
         document.getElementById("div5").style.color="Red";
@@ -63,22 +55,23 @@ function validate()
         document.getElementById("div5").innerHTML="";
     } 
 }    
-
+//JavaScript end Code
     </script>
+    
 </head>
 <body>
 
 <h3>NewRegisterForm</h3>
 <hr>
-<form action="registerformaction" method="get">
+<!-- code start -->
+<form action="registerformaction" method="get"><!-- Form action given -->
 <table>
-<!-- <tr><td>EmployeeId:</td><td><input type="text" name="empid" id="empid" onblur="validate()"/></td><td><h6 id="div1"></h6></td></tr> -->
-
+<!-- Table Design start -->
 <tr><td>EmployeeName:</td><td><input type="text" name="empname" id="empname" onblur="validate()"/></td><td><h6 id="div2"></h6></td></tr>
 <tr><td>Email:</td><td><input type="text" name="email" id="email" onblur="validate()"/></td><td><h6 id="div4"></h6></td></tr>
 <tr><td>Password:</td><td><input type="password" name="pass" id="pass" onblur="validate()"/></td><td><h6 id="div3"></h6></td></tr>
 <tr><td>Age:</td><td><input type="text" name="age" id="age" onblur="validate()"/></td><td><h6 id="div5"></h6></td></tr>
-<tr><td>Dob:</td><td><input type="text" name="dob"/></td></tr>
+<tr><td>Dob:</td><td><input type="text" name="dob" placeholder="dd/mm/yyyy"/></td></tr>
 <tr><td>Mobile:</td><td><input type="text" name="mobile"/></td></tr>
 <!-- <tr><td>Address:</td><td><input type="text" name="addr"/></td></tr> -->
 <tr><td>Gender:</td><td><input type="radio" name="gen" value="male"/>Male
@@ -93,8 +86,9 @@ function validate()
 </select>
 </td></tr>
 <tr><td><input type="submit" value="Register"/></td></tr>
+<!-- Table Design End -->
 </table>
 </form>
-
+<!-- Code End -->
 </body>
 </html>

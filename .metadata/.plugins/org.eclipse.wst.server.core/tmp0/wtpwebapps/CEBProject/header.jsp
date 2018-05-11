@@ -7,9 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <center>
+<h4>SkillMasterApplication</h4>
+<!-- hyperlink -->
 <a href="registerform.jsp">RegisterForm</a>
 <a href="loginpage.jsp">LoginPage</a>
+<a href="">HRLogin</a>
 </center>
 </body>
 </html>

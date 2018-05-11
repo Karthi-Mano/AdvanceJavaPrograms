@@ -44,26 +44,25 @@ public class loginaction extends HttpServlet {
 			try
 			{
 				
-				
+				//register driverclass
 				Class.forName("org.h2.Driver");
+				 //create a connection
 				Connection con = DriverManager.getConnection ("jdbc:h2:tcp://localhost/~/CEBProject","sa",""); 
 				
+				//create a preparedstatement
+				PreparedStatement prepared = con.prepareStatement("select * from register where empid=? and pass=?");
+				prepared.setString(1, emp);
+				prepared.setString(2, password);
+				 //execute a query
+				ResultSet rs=prepared.executeQuery();
 				
-				PreparedStatement pstmt = con.prepareStatement("select * from register where empid=? and pass=?");
-				pstmt.setString(1, emp);
-				pstmt.setString(2, password);
-				ResultSet rs=pstmt.executeQuery();
-				/*Statement stm=con.createStatement();
-				ResultSet rs=stm.executeQuery(str);
-				out.println(""+emp+""+password);*/
 				if(rs.next())
 				{
 				
 					//String name=request.getParameter("empid"); 
-					HttpSession session=request.getSession();  
-			        session.setAttribute("EmpId",emp);  
-
-			        RequestDispatcher dispatch=request.getRequestDispatcher("skillsetrequest.jsp");
+					HttpSession session=request.getSession();  //create a session
+			        session.setAttribute("EmpId",emp);  //set attribute
+                    RequestDispatcher dispatch=request.getRequestDispatcher("skillsetrequest.jsp");
 			        dispatch.forward(request, response);
 					out.println("**");
 				
