@@ -31,24 +31,23 @@ public class registerformaction extends HttpServlet {
 		
 		try
 		{
-			int regid=Integer.parseInt(request.getParameter("regid"));
-			String regname=request.getParameter("regname");
+			//int regid=Integer.parseInt(request.getParameter("regid"));
+			String empname=request.getParameter("empname");
 			String email=request.getParameter("email");
 			String pass=request.getParameter("pass");
 			int age=Integer.parseInt(request.getParameter("age"));
 			 String date=request.getParameter("dob");
 	        // int mobile=Integer.parseInt(request.getParameter("mobile"));
 	         String mobile=request.getParameter("mobile");
-	         String addr=request.getParameter("addr");
+	       /*  String addr=request.getParameter("addr");*/
 	         String gender=request.getParameter("gen");
-	         String role=request.getParameter("role");
-	         String skill1=request.getParameter("java");
-	         String skill2=request.getParameter("oops");
-	         String skill3=request.getParameter("devops");
-	         String status=request.getParameter("status");
+	         String quali=request.getParameter("quali");
+	        
 	         
 	         
-	         String str="insert into registerform values('"+regid+"','"+regname+"','"+email+"','"+pass+"','"+age+"','"+date+"','"+mobile+"','"+addr+"','"+gender+"','"+role+"','"+skill1+"','"+skill2+"','"+skill3+"','"+status+"')";
+	         String str="insert into register(empname,email,pass,age,dob,mobile,gender,qualification)values('"+empname+"','"+email+"','"+pass+"','"+age+"','"+date+"','"+mobile+"','"+gender+"','"+quali+"')";
+	         
+	         
 	         
 	         Class.forName("org.h2.Driver");
 	         Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/CEBProject","sa","");

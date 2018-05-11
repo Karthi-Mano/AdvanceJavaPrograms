@@ -5,38 +5,91 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>RegisterForm</title>
+<script type="text/javascript">
+function validate()
+{
+    //var empid = document.getElementById("empid").value;
+    var empname = document.getElementById("empname").value;
+    var email = document.getElementById("email").value;
+    var pass = document.getElementById("pass").value;
+    var age = document.getElementById("age").value;
+    /* if(empid==="")
+    {
+        document.getElementById("div1").innerHTML="Enter a employee id";
+        document.getElementById("div1").style.color="Red";
+        
+    }
+    else
+    {
+        document.getElementById("div1").innerHTML="";
+    } */
+    if(empname==="")
+    {
+        document.getElementById("div2").innerHTML="Enter a employee name";
+        document.getElementById("div2").style.color="Red";
+        
+    }
+    else
+    {
+        document.getElementById("div2").innerHTML="";
+    }
+    if(email.indexOf("@")> -1)
+    {
+        document.getElementById("div4").innerHTML="";
+    }
+     else
+    {
+        document.getElementById("div4").innerHTML="Enter the correct email address";
+        document.getElementById("div4").style.color="Red";
+        
+    }
+    if(pass.length<=6)
+    {
+        document.getElementById("div3").innerHTML="Password is weak";
+        document.getElementById("div3").style.color="Red";
+    }
+     else
+    {
+        document.getElementById("div3").innerHTML="";
+    }
+    if(age==="")
+    {
+        document.getElementById("div5").innerHTML="Enter a age";
+        document.getElementById("div5").style.color="Red";
+        
+    }
+    else
+    {
+        document.getElementById("div5").innerHTML="";
+    } 
+}    
+
+    </script>
 </head>
 <body>
+
 <h3>NewRegisterForm</h3>
 <hr>
 <form action="registerformaction" method="get">
 <table>
-<tr><td>RegId:</td><td><input type="text" name="regid" required/></td></tr>
-<tr><td>RegName</td><td><input type="text" name="regname"/></td></tr>
-<tr><td>Email:</td><td><input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/></td></tr>
-<tr><td>Password:</td><td><input type="pass" name="pass" pattern=".{6,}" title="Six or more characters"/></td></tr>
-<tr><td>Age:</td><td><input type="text" name="age"/></td></tr>
+<!-- <tr><td>EmployeeId:</td><td><input type="text" name="empid" id="empid" onblur="validate()"/></td><td><h6 id="div1"></h6></td></tr> -->
+
+<tr><td>EmployeeName:</td><td><input type="text" name="empname" id="empname" onblur="validate()"/></td><td><h6 id="div2"></h6></td></tr>
+<tr><td>Email:</td><td><input type="text" name="email" id="email" onblur="validate()"/></td><td><h6 id="div4"></h6></td></tr>
+<tr><td>Password:</td><td><input type="password" name="pass" id="pass" onblur="validate()"/></td><td><h6 id="div3"></h6></td></tr>
+<tr><td>Age:</td><td><input type="text" name="age" id="age" onblur="validate()"/></td><td><h6 id="div5"></h6></td></tr>
 <tr><td>Dob:</td><td><input type="text" name="dob"/></td></tr>
 <tr><td>Mobile:</td><td><input type="text" name="mobile"/></td></tr>
-<tr><td>Address:</td><td><input type="text" name="addr"/></td></tr>
+<!-- <tr><td>Address:</td><td><input type="text" name="addr"/></td></tr> -->
 <tr><td>Gender:</td><td><input type="radio" name="gen" value="male"/>Male
 <input type="radio" name="gen" value="female"/>Female
 </td></tr>
-<tr><td>Role:</td><td><select name="role">
-<option>Trainer</option>
-<option>Mentor</option>
-<option>Manager</option>
-</select></td></tr>
-<tr><td>SkillSet:</td><td>Skill-1:<input type="checkbox" name="java" value="java"/>Java
-<br>
-Skill-2:<input type="checkbox" name="oops" value="oops"/>OOPS
-<br>
-Skill-3:<input type="checkbox" name="devops" value="devops"/>Devops
-</td></tr>
-<tr><td>Status:</td><td>
-<select name="status">
-<option>NewStaff</option>
-<option>OldStaff</option>
+<tr><td>Qualification:</td><td>
+<select name="quali">
+<option>BE</option>
+<option>BTECH</option>
+<option>BSC</option>
+<option>MSC</option>
 </select>
 </td></tr>
 <tr><td><input type="submit" value="Register"/></td></tr>
