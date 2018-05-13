@@ -39,7 +39,7 @@ public class loginaction extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		
-		String emp=request.getParameter("empid");
+		String emp=request.getParameter("email");
 		String password=request.getParameter("pass");
 			try
 			{
@@ -50,7 +50,7 @@ public class loginaction extends HttpServlet {
 				Connection con = DriverManager.getConnection ("jdbc:h2:tcp://localhost/~/CEBProject","sa",""); 
 				
 				//create a preparedstatement
-				PreparedStatement prepared = con.prepareStatement("select * from register where empid=? and pass=?");
+				PreparedStatement prepared = con.prepareStatement("select * from register where email=? and pass=?");
 				prepared.setString(1, emp);
 				prepared.setString(2, password);
 				 //execute a query
@@ -61,7 +61,7 @@ public class loginaction extends HttpServlet {
 				
 					//String name=request.getParameter("empid"); 
 					HttpSession session=request.getSession();  //create a session
-			        session.setAttribute("EmpId",emp);  //set attribute
+			        session.setAttribute("email",emp);  //set attribute
                     RequestDispatcher dispatch=request.getRequestDispatcher("skillsetrequest.jsp");
 			        dispatch.forward(request, response);
 					out.println("**");

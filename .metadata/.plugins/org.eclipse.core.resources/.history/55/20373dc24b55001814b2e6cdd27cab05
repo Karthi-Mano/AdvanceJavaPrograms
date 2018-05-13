@@ -1,0 +1,49 @@
+package com.niit;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class skillsetform
+ */
+@WebServlet("/skillsetform")
+public class skillsetform extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public skillsetform() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		try
+		{
+			String skills1="";
+			String skills2=""
+			String[] certificate = request.getParameterValues("select2");
+			  for(int i=0; i<certificate.length; i++){
+				  skills1+=certificate[i]+" ";
+			  }
+			  String[] skills = request.getParameterValues("select3");
+			  for(int i=0; i<skills.length; i++){
+				  skills2+=skills[i]+" ";
+			  }
+		}
+		catch(Exception t)
+		{
+			System.out.println(t);
+		}
+	}
+
+}

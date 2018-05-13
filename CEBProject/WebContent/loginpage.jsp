@@ -12,7 +12,7 @@
 <hr>
 <form action="loginaction" method="get"><!-- form action -->
 <!-- Form code start -->
-EmployeeId:<input type="text" name="empid"/><br><br>
+EmployeeEmail:<input type="text" name="email"/><br><br>
 EmployeePass:<input type="password" name="pass"/><br><br>
 <input type="submit" value="Login">
 <!-- Form Code End -->

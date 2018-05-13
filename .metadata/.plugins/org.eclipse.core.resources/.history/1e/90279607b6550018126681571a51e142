@@ -1,0 +1,9 @@
+package com.niit.SpringAppDemo.Test;
+
+public class AppSample
+{
+  public Hello()
+  {
+	  
+  }
+}

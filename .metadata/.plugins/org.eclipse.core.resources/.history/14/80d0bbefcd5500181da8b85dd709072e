@@ -1,0 +1,6 @@
+package com.niit.springdemo.config;
+
+public class WebAppInitializer extends 
+{
+
+}

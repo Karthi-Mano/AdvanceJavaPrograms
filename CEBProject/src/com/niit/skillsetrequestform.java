@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class skillsetrequestform
@@ -37,10 +38,12 @@ public class skillsetrequestform extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		try
 		{
-			String skills=" ";
-		String empid=request.getParameter("empid");
-		String empname=request.getParameter("empname");
+			//Code start
+			
+			
 		String email=request.getParameter("email");
+		String empname=request.getParameter("empname");
+		/*String email=request.getParameter("email");*/
 		String quali=request.getParameter("quali");
 		int nobatch=Integer.parseInt(request.getParameter("nobatch")); 
 		int stuh=Integer.parseInt(request.getParameter("stuh")); 
@@ -48,13 +51,9 @@ public class skillsetrequestform extends HttpServlet {
 		String role=request.getParameter("role");
 		int stup=Integer.parseInt(request.getParameter("stup")); 
 		String status=request.getParameter("stus");
-		//String skillset=(String) request.getParameter("select2");
-		 String[] skillset = request.getParameterValues("select2");
-		  for(int i=0; i<skillset.length; i++){
-			  skills+=skillset[i]+" ";
-		  }
+	  
 		//query to insert the data
-String str="insert into skillsetapply(empname,email,qualification,noofbatch,studentshandle,currentrole,rolerequest,skillsetadd,studentsplaced,status,empid)values('"+empname+"','"+email+"','"+quali+"','"+nobatch+"','"+stuh+"','"+crole+"','"+role+"','"+skills+"','"+stup+"','"+status+"','"+empid+"')";
+String str="insert into skillmaster(empname,qualification,noofbatch,studentshandle,currentrole,rolerequest,studentsplaced,status,email)values('"+empname+"','"+quali+"','"+nobatch+"','"+stuh+"','"+crole+"','"+role+"','"+stup+"','"+status+"','"+email+"')";
          
          
          //register driverclass
@@ -64,8 +63,15 @@ String str="insert into skillsetapply(empname,email,qualification,noofbatch,stud
          //create a statement
          Statement statement=connection.createStatement();
           //execute a query
+        
          statement.executeUpdate(str);
+       
          out.println("Inserted");
+       
+         
+         //code end
+         
+       
 		}
 		catch(Exception t)
 		{

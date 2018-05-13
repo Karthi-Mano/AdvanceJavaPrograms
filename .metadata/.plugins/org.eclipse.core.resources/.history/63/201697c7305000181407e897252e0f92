@@ -1,8 +1,0 @@
-package com;
-
-public class RecordAction 
-{
-  String email,pass;
-  
-  
-}

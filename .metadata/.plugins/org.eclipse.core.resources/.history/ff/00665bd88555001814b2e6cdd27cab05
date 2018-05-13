@@ -1,0 +1,72 @@
+package com.niit;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class approveaction
+ */
+@WebServlet("/approveaction")
+public class approveaction extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public approveaction() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+	{
+		
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+	   try
+	   {
+		   String email=request.getParameter("email");
+		   
+		   String query="select * from skillmaster where email='"+email+"'";
+		   
+		   //register driverclass
+	         Class.forName("org.h2.Driver");
+	         //create a connection
+	         Connection connection=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/CEBProject","sa","");
+	         //create a statement
+	         Statement statement=connection.createStatement();
+	          //execute a query
+	         statement.executeUpdate(query);
+	         
+	        
+	         
+	         out.println("<table>");
+	         out.println("<th>EmployeeName</th>");
+	         out.println("<th>Qualification</th>");
+	         out.println("<th>Noofbatch</th>");
+	         out.println("<th></th>");
+	         out.println("<tr><td></td></tr>");
+	         out.println("</table>");
+	         out.println("Searching...");
+	         
+	         
+	   }
+	   catch(Exception t)
+	   {
+		System.out.println(t);   
+	   }
+	}
+
+}

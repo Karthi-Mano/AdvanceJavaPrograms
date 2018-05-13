@@ -67,11 +67,11 @@ function validate()//function
 <form action="registerformaction" method="get"><!-- Form action given -->
 <table>
 <!-- Table Design start -->
-<tr><td>EmployeeName:</td><td><input type="text" name="empname" id="empname" onblur="validate()"/></td><td><h6 id="div2"></h6></td></tr>
-<tr><td>Email:</td><td><input type="text" name="email" id="email" onblur="validate()"/></td><td><h6 id="div4"></h6></td></tr>
-<tr><td>Password:</td><td><input type="password" name="pass" id="pass" onblur="validate()"/></td><td><h6 id="div3"></h6></td></tr>
-<tr><td>Age:</td><td><input type="text" name="age" id="age" onblur="validate()"/></td><td><h6 id="div5"></h6></td></tr>
-<tr><td>Dob:</td><td><input type="text" name="dob" placeholder="dd/mm/yyyy"/></td></tr>
+<tr><td>EmployeeName:</td><td><input type="text" name="empname" id="empname" onClick="validate()" requried/></td><td><h6 id="div2"></h6></td></tr>
+<tr><td>Email:</td><td><input type="text" name="email" id="email" onClick="validate()"/></td><td><h6 id="div4"></h6></td></tr>
+<tr><td>Password:</td><td><input type="password" name="pass" id="pass" onClick="validate()"/></td><td><h6 id="div3"></h6></td></tr>
+<tr><td>Age:</td><td><input type="text" name="age" id="age" onClick="validate()"/></td><td><h6 id="div5"></h6></td></tr>
+<tr><td>Dob:</td><td><input type="text" name="dob" placeholder="dd/mm/yyyy" required/></td></tr>
 <tr><td>Mobile:</td><td><input type="text" name="mobile"/></td></tr>
 <!-- <tr><td>Address:</td><td><input type="text" name="addr"/></td></tr> -->
 <tr><td>Gender:</td><td><input type="radio" name="gen" value="male"/>Male
@@ -85,7 +85,7 @@ function validate()//function
 <option>MSC</option>
 </select>
 </td></tr>
-<tr><td><input type="submit" value="Register"/></td></tr>
+<tr><td><input type="submit" value="Register" onClick="validate()"/></td></tr>
 <!-- Table Design End -->
 </table>
 </form>

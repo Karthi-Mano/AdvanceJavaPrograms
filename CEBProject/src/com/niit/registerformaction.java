@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -28,7 +29,7 @@ public class registerformaction extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		
-		
+		//Code start
 		try
 		{
 			//int regid=Integer.parseInt(request.getParameter("regid"));
@@ -41,11 +42,11 @@ public class registerformaction extends HttpServlet {
 	         String mobile=request.getParameter("mobile");
 	       /*  String addr=request.getParameter("addr");*/
 	         String gender=request.getParameter("gen");
-	         String quali=request.getParameter("quali");
+	         String qualification=request.getParameter("quali");
 	        
 	         
 	         //query to insert the data
-	         String str="insert into register(empname,email,pass,age,dob,mobile,gender,qualification)values('"+empname+"','"+email+"','"+pass+"','"+age+"','"+date+"','"+mobile+"','"+gender+"','"+quali+"')";
+	         String str="insert into register(empname,email,pass,age,dob,mobile,gender,qualification)values('"+empname+"','"+email+"','"+pass+"','"+age+"','"+date+"','"+mobile+"','"+gender+"','"+qualification+"')";
 	         
 	         
 	         //register driverclass
@@ -58,11 +59,16 @@ public class registerformaction extends HttpServlet {
 	         statement.executeUpdate(str);
 	         out.println("Inserted");
 			
+	         
+	         //Code end
 			
 		}
-		catch(Exception t)
+		catch(SQLException t)
 		{
 			System.out.println(t);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 
