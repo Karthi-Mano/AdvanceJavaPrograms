@@ -9,11 +9,12 @@
 //JavaScript Start code
 function validate()//function
 {
-    //var empid = document.getElementById("empid").value;
+    
     var empname = document.getElementById("empname").value;
     var email = document.getElementById("email").value;
     var pass = document.getElementById("pass").value;
     var age = document.getElementById("age").value;
+    var mobile = document.getElementById("mobile").value;
    
     if(empname==="")//condition -1
     {
@@ -53,7 +54,16 @@ function validate()//function
     else
     {
         document.getElementById("div5").innerHTML="";
-    } 
+    }  
+    if(mobile==="")//condition -6
+    {
+        document.getElementById("div6").innerHTML="Give Phone Number";
+        document.getElementById("div6").style.color="Red";
+    }
+     else
+    {
+        document.getElementById("div6").innerHTML="";
+    }
 }    
 //JavaScript end Code
     </script>
@@ -72,7 +82,7 @@ function validate()//function
 <tr><td>Password:</td><td><input type="password" name="pass" id="pass" onClick="validate()"/></td><td><h6 id="div3"></h6></td></tr>
 <tr><td>Age:</td><td><input type="text" name="age" id="age" onClick="validate()"/></td><td><h6 id="div5"></h6></td></tr>
 <tr><td>Dob:</td><td><input type="text" name="dob" placeholder="dd/mm/yyyy" required/></td></tr>
-<tr><td>Mobile:</td><td><input type="text" name="mobile"/></td></tr>
+<tr><td>Mobile:</td><td><input type="text" name="mobile" id="mobile" onClick="validate()" /></td><td><h6 id="div6"></h6></td></tr>
 <!-- <tr><td>Address:</td><td><input type="text" name="addr"/></td></tr> -->
 <tr><td>Gender:</td><td><input type="radio" name="gen" value="male"/>Male
 <input type="radio" name="gen" value="female"/>Female

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>SkillMapApplication</title>
 </head>
 <body>
 <center>
@@ -18,5 +18,6 @@ EmployeePass:<input type="password" name="pass"/><br><br>
 <!-- Form Code End -->
 </center>
 </form>
+<center><a href='header.jsp'>GoToHomePage</a></center>
 </body>
 </html>

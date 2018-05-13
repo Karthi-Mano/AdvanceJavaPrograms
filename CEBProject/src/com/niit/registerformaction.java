@@ -32,15 +32,15 @@ public class registerformaction extends HttpServlet {
 		//Code start
 		try
 		{
-			//int regid=Integer.parseInt(request.getParameter("regid"));
+			
 			String empname=request.getParameter("empname");
 			String email=request.getParameter("email");
 			String pass=request.getParameter("pass");
 			int age=Integer.parseInt(request.getParameter("age"));
 			 String date=request.getParameter("dob");
-	        // int mobile=Integer.parseInt(request.getParameter("mobile"));
+	        
 	         String mobile=request.getParameter("mobile");
-	       /*  String addr=request.getParameter("addr");*/
+	      
 	         String gender=request.getParameter("gen");
 	         String qualification=request.getParameter("quali");
 	        
@@ -58,7 +58,7 @@ public class registerformaction extends HttpServlet {
 	         //execute a query
 	         statement.executeUpdate(str);
 	         out.println("Inserted");
-			
+	         out.println("<a href='header.jsp'>Back</a>");
 	         
 	         //Code end
 			

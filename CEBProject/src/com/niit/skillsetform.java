@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -62,7 +63,9 @@ public class skillsetform extends HttpServlet {
 		         Statement statement=connection.createStatement();
 		          //execute a query
 		         statement.executeUpdate(str);
-		         out.println("Inserted");
+		        
+		         out.println("Inserted..");
+		         out.println("<a href='skillsetrequest.jsp'>Back</a>");
 		}
 		catch(Exception t)
 		{

@@ -71,5 +71,6 @@ String s=(String)sess.getAttribute("email");
 </table>
 
 </form>
+<a href='loginpage.jsp'>Back</a>
 </body>
 </html>

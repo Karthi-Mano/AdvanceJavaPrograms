@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -66,7 +67,10 @@ String str="insert into skillmaster(empname,qualification,noofbatch,studentshand
         
          statement.executeUpdate(str);
        
-         out.println("Inserted");
+         
+         out.println("Inserted..");
+         out.println("<a href='skillsetrequest.jsp'>Back</a>");
+         
        
          
          //code end

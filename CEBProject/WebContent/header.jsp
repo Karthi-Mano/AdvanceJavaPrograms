@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>SkillMapApplication</title>
 </head>
 <body>
 
@@ -12,7 +12,7 @@
 <h4>SkillMapApplication</h4>
 <!-- hyperlink -->
 <a href="registerform.jsp">RegisterForm</a>
-<a href="loginpage.jsp">LoginPage</a>
+<a href="loginpage.jsp">SkillSetLoginPage</a>
 <a href="hrlogin.jsp">HRApproveLogin</a>
 </center>
 </body>

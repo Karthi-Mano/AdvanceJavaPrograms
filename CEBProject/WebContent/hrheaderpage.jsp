@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>SkillMapApplication</title>
 </head>
 <body>
 <center>
@@ -14,6 +14,7 @@
 <a href="Approvehrform.jsp">ApprovalGivenPage</a>
 <a href="ViewApproval.jsp">ViewApprovalList</a>
 <a href="ViewNonApproval.jsp">ViewNonApprovalList</a>
+<a href="viewsearch.jsp">ViewSearch</a>
 <hr/>
 </center>
 </body>
