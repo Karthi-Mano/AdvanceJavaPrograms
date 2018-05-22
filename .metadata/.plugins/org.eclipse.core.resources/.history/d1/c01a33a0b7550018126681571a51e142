@@ -1,9 +1,0 @@
-package com.niit.SpringAppDemo;
-
-public class AppSample
-{
-  public void say()
-  {
-	  System.out.println("hello");
-  }
-}

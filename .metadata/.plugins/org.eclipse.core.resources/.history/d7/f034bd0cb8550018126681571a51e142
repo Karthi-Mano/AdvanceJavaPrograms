@@ -1,6 +1,0 @@
-package com.niit.SpringAppDemo.Test;
-
-public interface HelloWorld 
-{
-  public HelloWorld say();
-}
