@@ -1,0 +1,7 @@
+127.0.0.1 - - [26/May/2018:12:46:22 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [26/May/2018:12:46:22 +0530] "GET /ServletDemo1/homepage.jsp HTTP/1.1" 200 441
+0:0:0:0:0:0:0:1 - - [26/May/2018:12:46:35 +0530] "GET /ServletDemo1/SampleServlet?uname=aa&pass=ss HTTP/1.1" 200 11
+0:0:0:0:0:0:0:1 - - [26/May/2018:12:46:45 +0530] "GET /ServletDemo1/SampleServlet?uname=admin&pass=admin HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1 - - [26/May/2018:13:05:32 +0530] "GET /ServletDemo1/homepage.jsp HTTP/1.1" 200 441
+0:0:0:0:0:0:0:1 - - [26/May/2018:13:05:35 +0530] "GET /ServletDemo1/SampleServlet?uname=azar&pass=azar HTTP/1.1" 200 481
+0:0:0:0:0:0:0:1 - - [26/May/2018:13:05:42 +0530] "GET /ServletDemo1/SampleServlet?uname=admin&pass=admin HTTP/1.1" 200 285
