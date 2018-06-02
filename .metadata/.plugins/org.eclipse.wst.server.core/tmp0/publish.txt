@@ -1,3 +1,2 @@
 #Tomcat publish data
-#Sun May 27 14:04:45 IST 2018
-org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Asar\\.m2\\repository\\org\\springframework\\spring-web\\4.3.7.RELEASE\\spring-web-4.3.7.RELEASE.jar=WEB-INF/lib/spring-web-4.3.7.RELEASE.jar
+#Sat Jun 02 13:07:33 IST 2018
