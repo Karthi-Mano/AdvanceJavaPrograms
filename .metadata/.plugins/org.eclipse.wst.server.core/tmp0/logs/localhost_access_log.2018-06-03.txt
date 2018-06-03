@@ -1,0 +1,4 @@
+127.0.0.1 - - [03/Jun/2018:13:40:45 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [03/Jun/2018:13:40:47 +0530] "GET /JspUseBeanPrograms/Demo1.jsp HTTP/1.1" 200 426
+0:0:0:0:0:0:0:1 - - [03/Jun/2018:13:40:47 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [03/Jun/2018:13:40:54 +0530] "GET /JspUseBeanPrograms/loginaction.jsp?uname=admin&pass=azar HTTP/1.1" 200 290

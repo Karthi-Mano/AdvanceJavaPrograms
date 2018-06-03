@@ -1,4 +1,5 @@
 package a;
+
 public class Process 
 {
   String uname,pass;
@@ -18,5 +19,4 @@ public String getPass() {
 public void setPass(String pass) {
 	this.pass = pass;
 }
-  
 }
