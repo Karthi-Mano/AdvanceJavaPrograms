@@ -9,6 +9,7 @@
 <body>
 <form action="Servlet1" method="get">
 Name:<input type="text" name="uname"/>
+<input type="hidden" name="email" value="admin@gmail.com"/>
 <input type="submit" value="ClickHere"/> 
 </form>
 </body>
