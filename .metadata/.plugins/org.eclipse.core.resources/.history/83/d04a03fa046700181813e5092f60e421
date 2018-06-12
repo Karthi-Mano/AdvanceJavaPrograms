@@ -1,6 +1,0 @@
-package a;
-
-public class Process 
-{
-  String uname,pass;
-}
