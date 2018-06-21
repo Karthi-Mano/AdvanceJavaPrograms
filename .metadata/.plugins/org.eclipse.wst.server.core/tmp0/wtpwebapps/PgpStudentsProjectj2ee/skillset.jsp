@@ -33,12 +33,19 @@ while(rs.next())
 <th>Pass</th>
 <th>Gender</th>
 <th>Mobile</th>
+<th>Action</th>
 </tr>
 <tr>
 <td><%=rs.getString(1)%></td>
 <td><%=rs.getString(2)%></td>
 <td><%=rs.getString(3)%></td>
 <td><%=rs.getString(4)%></td>
+<td>
+
+<form action="ViewDatainForm.jsp">
+<input type="submit" value="Update"/>
+</form>
+</td>
 </tr>
 </table>
 
