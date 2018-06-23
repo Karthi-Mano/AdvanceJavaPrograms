@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- HeaderCodestart -->
+<center><img src="images/mainlogo.jpg" width=40% height="40%"/></center>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="images/FinalLogoVenus-01.jpg" width="40px" height="40px"></img></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">AboutUs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Principaldesk.html">PrincipalDesk</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="acadamics.html">Academics</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Course
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Prep-1 to Prep-3</a>
+          <a class="dropdown-item" href="#">Prep-5</a>
+          <a class="dropdown-item" href="#">Prep-6</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Infrastructure
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Sports</a>
+          <a class="dropdown-item" href="#">Library</a>
+          <a class="dropdown-item" href="#">BusFaculty</a>
+          <a class="dropdown-item" href="#">Hostel</a>
+        </div>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfmGgBfFMLOYtHofC3Gs9LhISBY-LkIUVOTm4uXkLppNhQs-w/viewform?c=0&w=1">EnquiryForm</a>
+      </li>  
+    </ul>
+    
+  </div>
+</nav>
+<!-- HeaderCodeEnd -->
+</body>
+</html>
