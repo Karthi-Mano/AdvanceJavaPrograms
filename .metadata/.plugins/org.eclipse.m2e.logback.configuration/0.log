@@ -937,3 +937,31 @@ java.lang.NullPointerException: null
 2018-06-23 13:25:35,155 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-06-23 13:25:35,157 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-06-23 13:25:35,158 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SpringHardCode\src\test\resources
+2018-06-24 12:27:45,784 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-24 12:27:45,810 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SampleApp\src\main\resources
+2018-06-24 12:27:45,812 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-24 12:27:45,812 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SampleApp\src\test\resources
+2018-06-24 12:27:49,461 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-24 12:27:49,469 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SpringAppDemo\src\main\resources
+2018-06-24 12:27:49,473 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-24 12:27:49,474 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SpringAppDemo\src\test\resources
+2018-06-24 12:27:50,421 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-06-24 12:27:50,500 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-06-24 12:27:50,505 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-06-24 12:27:50,507 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SpringHardCode\src\test\resources
+2018-06-25 14:01:52,495 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-06-25 14:01:52,601 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-06-25 14:01:52,608 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-06-25 14:01:52,610 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SpringHardCode\src\test\resources
+2018-06-27 14:59:21,859 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-27 14:59:21,877 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SampleApp\src\main\resources
+2018-06-27 14:59:21,880 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-27 14:59:21,881 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SampleApp\src\test\resources
+2018-06-27 14:59:25,244 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-27 14:59:25,244 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SpringAppDemo\src\main\resources
+2018-06-27 14:59:25,247 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-27 14:59:25,247 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SpringAppDemo\src\test\resources
+2018-06-27 14:59:26,204 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-06-27 14:59:26,213 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-06-27 14:59:26,215 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-06-27 14:59:26,216 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\AdvanceJavaEclipse\AdvanceJavaPrograms\SpringHardCode\src\test\resources
