@@ -15,3 +15,11 @@
 0:0:0:0:0:0:0:1 - - [28/Jun/2018:15:36:45 +0530] "GET /PgpWebApp/emplogin.jsp HTTP/1.1" 200 425
 0:0:0:0:0:0:0:1 - - [28/Jun/2018:15:36:53 +0530] "GET /PgpWebApp/emplogindb.jsp?email=azartechnet%40gmail.com&pass=azar HTTP/1.1" 200 289
 0:0:0:0:0:0:0:1 - - [28/Jun/2018:15:36:59 +0530] "GET /PgpWebApp/emplogindb.jsp?email=azartechnet%40gmail.com&pass=azarzxc HTTP/1.1" 200 712
+127.0.0.1 - - [28/Jun/2018:16:43:27 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [28/Jun/2018:16:43:30 +0530] "GET /skillassessment/home.jsp HTTP/1.1" 200 10902
+0:0:0:0:0:0:0:1 - - [28/Jun/2018:16:43:39 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [28/Jun/2018:16:43:55 +0530] "GET /skillassessment/employeepage.jsp HTTP/1.1" 200 8964
+0:0:0:0:0:0:0:1 - - [28/Jun/2018:16:43:57 +0530] "GET /skillassessment/registerform.jsp? HTTP/1.1" 200 10469
+0:0:0:0:0:0:0:1 - - [28/Jun/2018:16:44:03 +0530] "GET /skillassessment/employeelogin.jsp? HTTP/1.1" 200 9512
+0:0:0:0:0:0:0:1 - - [28/Jun/2018:16:44:10 +0530] "GET /skillassessment/employeeloginaction.jsp?usrname=azar&pass=azar HTTP/1.1" 200 8897
+0:0:0:0:0:0:0:1 - - [28/Jun/2018:16:44:12 +0530] "GET /skillassessment/empprofile.jsp? HTTP/1.1" 200 9034
