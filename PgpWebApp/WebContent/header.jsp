@@ -10,7 +10,7 @@
 <center>
 <a href="employeereg.jsp">EmployeeRegister</a>
 <a href="emplogin.jsp">EmployeeLogin</a>
-<a href="">HrLogin</a>
+<a href="hrloginpage.jsp">HrLogin</a>
 </center>
 </body>
 </html>

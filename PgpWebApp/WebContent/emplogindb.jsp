@@ -32,7 +32,10 @@ String pass=rs.getString(2);
 if(e.equals(email)&&p.equals(pass))
 {
 	
-	
+  HttpSession sess=request.getSession();
+  
+  sess.setAttribute("emailid",email);
+  
 	
 	
 	%>
