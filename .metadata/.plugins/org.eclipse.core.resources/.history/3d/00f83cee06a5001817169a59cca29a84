@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function fun2()
+{
+	var age,e;
+	a1=document.getElementById("age").valueOf()
+	e="/^[0-9]*$/";
+	if(!(e.checkValidity(a1)))
+		{
+		  document.getElementById("agev1").innerHTML="<font style='color:'red'>Invalid</font>'>"
+		}
+	else
+		{
+		 document.getElementById("agev1").innerHTML="<font style='color:'red'></font>'>"
+		}
+	
+	
+	}
+
+</script>
+</head>
+<body>
+<form>
+Name:<input type="text"/>
+Age:<input type="text" id="age" onblur="fun2()"/><span id="agev1"></span>
+Mobile:<input type="text"/>
+Email:<input type="text"/>
+<input type="submit" value="Validate"/>
+</form>
+</body>
+</html>
