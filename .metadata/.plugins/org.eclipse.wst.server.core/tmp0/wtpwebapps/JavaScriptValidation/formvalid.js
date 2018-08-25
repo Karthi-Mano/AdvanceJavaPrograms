@@ -13,11 +13,16 @@ firstname.focus();
 return false;
 }
 // Check each input in the order that it appears in the form.
-if (inputAlphabet(firstname, "* For your name please use alphabets only *")) {
-if (lengthDefine(username, 6, 8)) {
-if (emailValidation(email, "* Please enter a valid email address *")) {
-if (trueSelection(state, "* Please Choose any one option")) {
-if (textAlphanumeric(addr, "* For Address please use numbers and letters *")) {
+if (inputAlphabet(firstname, "* For your name please use alphabets only *")) 
+{
+if (lengthDefine(username, 6, 8)) 
+{
+if (emailValidation(email, "* Please enter a valid email address *"))
+{
+if (trueSelection(state, "* Please Choose any one option"))
+{
+if (textAlphanumeric(addr, "* For Address please use numbers and letters *"))
+{
 if (textNumeric(zip, "* Please enter a valid zip code *")) {
 return true;
 }
