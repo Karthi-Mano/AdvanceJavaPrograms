@@ -1,0 +1,11 @@
+127.0.0.1 - - [28/Aug/2018:19:45:18 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [28/Aug/2018:19:45:18 +0530] "GET /skillassessment/ HTTP/1.1" 404 1026
+0:0:0:0:0:0:0:1 - - [28/Aug/2018:19:45:18 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [28/Aug/2018:19:48:02 +0530] "GET /skillassessment/home.jsp HTTP/1.1" 200 10902
+0:0:0:0:0:0:0:1 - - [28/Aug/2018:19:49:06 +0530] "GET /skillassessment/employeepage.jsp HTTP/1.1" 200 8964
+0:0:0:0:0:0:0:1 - - [28/Aug/2018:19:49:08 +0530] "GET /skillassessment/registerform.jsp? HTTP/1.1" 200 10454
+0:0:0:0:0:0:0:1 - - [28/Aug/2018:19:49:18 +0530] "GET /skillassessment/hrlogin.jsp HTTP/1.1" 200 9483
+0:0:0:0:0:0:0:1 - - [28/Aug/2018:19:49:28 +0530] "GET /skillassessment/hrhomepage.jsp?usr=admin%40gmail.com&pwd=admin HTTP/1.1" 200 8970
+0:0:0:0:0:0:0:1 - - [28/Aug/2018:19:49:37 +0530] "GET /skillassessment/hremployeedetailspage.jsp? HTTP/1.1" 200 8739
+0:0:0:0:0:0:0:1 - - [28/Aug/2018:19:49:41 +0530] "GET /skillassessment/skillsetapplyperson.jsp? HTTP/1.1" 200 8815
+0:0:0:0:0:0:0:1 - - [28/Aug/2018:19:49:44 +0530] "GET /skillassessment/hrapprovalpage.jsp?person= HTTP/1.1" 200 9298
