@@ -50,6 +50,66 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/j1.jpg" alt="...">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/j2.jpg" alt="...">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/j3.jpg" alt="...">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/j4.jpg" alt="...">
+    </a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+   <div class="thumbnail">
+      <img src="images/p1.jpg" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+   <div class="thumbnail">
+      <img src="images/p2.jpg" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+   <div class="thumbnail">
+      <img src="images/p3.jpg" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
