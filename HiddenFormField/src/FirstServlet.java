@@ -27,7 +27,7 @@ public class FirstServlet extends HttpServlet {
 		//out.println("welcome to niit"+n);
 		out.println("<html>");
 		out.println("<form action='SecondServlet'>");
-		out.println("<input type='hidden' name='uname' value="+n+">"
+		out.println("<input type='hidden' name='u1' value="+n+">"
 				+ "<input type='submit' value='Login'/>");
 		out.println("</form>");
 		out.println("</html>");

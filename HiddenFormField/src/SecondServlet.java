@@ -22,7 +22,7 @@ public class SecondServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		PrintWriter out=response.getWriter();
-		String n=request.getParameter("uname");
+		String n=request.getParameter("u1");
 		out.println("welcome to niit"+n);
 	}
 
