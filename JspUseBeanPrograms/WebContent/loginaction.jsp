@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" import="a.Process"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,5 +11,9 @@
 Record is:<jsp:setProperty property="*" name="r"/>
 <jsp:getProperty property="uname" name="r"/>
 <jsp:getProperty property="pass" name="r"/>
+<%
+/* r.setUname("niit"); */
+System.out.println("*****"+r.getUname());
+%>
 </body>
 </html>

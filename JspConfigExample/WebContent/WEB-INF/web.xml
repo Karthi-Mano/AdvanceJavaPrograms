@@ -9,13 +9,13 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>HomePage.jsp</welcome-file>
   </welcome-file-list>
-  <!-- <servlet>
-    
+   <servlet>
+    <servlet-name>dummy</servlet-name>
     <jsp-file>configaction.jsp</jsp-file>
     <init-param>
     <param-name>dd</param-name>
     <param-value>welcome</param-value>
     </init-param>
-  </servlet> -->
+  </servlet>
  
 </web-app>
